@@ -1,0 +1,55 @@
+@page "/branches"
+
+@using callWebAPI.Data
+
+@inject IBrancheItemService brancheItemService;
+
+<h1>Branches</h1>
+@if (getUserItemError)
+{
+    <p><em>Unable to get Users...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var brancheItem in branches)
+            {
+                <tr>
+                    <td>@brancheItem.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button class="btn btn-primary" @onclick="clickEvent" >Call</button>
+
+
+@code {
+
+    public IEnumerable<BrancheItem> branches { get; set; }
+
+    public bool getUserItemError = true;
+
+    // Chargement des utilisateurs au chargement de la page
+    /*protected override async Task OnInitializedAsync()
+    {
+        users = (await userItemService.GetUserItems()).ToList();
+
+        getUserItemError = false;
+    }
+    */
+
+    // Chargement des utilisateurs sur demande
+    private async Task clickEvent() {
+        branches = (await brancheItemService.GetBrancheItems()).ToList();
+
+        getUserItemError = false;
+    }
+}

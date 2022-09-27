@@ -1,0 +1,61 @@
+@page "/list"
+
+@using callWebAPI.Data
+
+@inject IUserItemService userItemService;
+
+<h1>List users</h1>
+@if (getUserItemError)
+{
+    <p><em>Unable to get Users...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>UserName</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var userItem in users)
+            {
+                <tr>
+                    <td>@userItem.Id</td>
+                    <td>@userItem.Name</td>
+                    <td>@userItem.Username</td>
+                    <td>@userItem.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+<button class="btn btn-primary" @onclick="clickEvent" >CAll</button>
+
+
+@code {
+
+    public IEnumerable<UserItem> users { get; set; }
+
+    public bool getUserItemError = true;
+
+    // Chargement des utilisateurs au chargement de la page
+    /*protected override async Task OnInitializedAsync()
+    {
+        users = (await userItemService.GetUserItems()).ToList();
+
+        getUserItemError = false;
+    }
+    */
+
+    // Chargement des utilisateurs sur demande
+    private async Task clickEvent() {
+        users = (await userItemService.GetUserItems()).ToList();
+
+        getUserItemError = false;
+    }
+}

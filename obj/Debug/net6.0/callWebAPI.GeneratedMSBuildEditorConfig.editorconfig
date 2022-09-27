@@ -1,0 +1,68 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = callWebAPI
+build_property.RootNamespace = callWebAPI
+build_property.ProjectDir = C:\Users\dickl\Documents\vscode\blazor\callWebAPI\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\dickl\Documents\vscode\blazor\callWebAPI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/List.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/ListBranche.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdEJyYW5jaGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-rcpl6x2bg1
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-w84e6iejf5
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/dickl/Documents/vscode/blazor/callWebAPI/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
