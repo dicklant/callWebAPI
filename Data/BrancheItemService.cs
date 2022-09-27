@@ -20,6 +20,10 @@ public class BrancheItemService : IBrancheItemService
     public async Task<IEnumerable<BrancheItem>> GetBrancheItems()
     {
         //return await httpClient.GetFromJsonAsync<BrancheItem[]>("/vehicles"); 
-        return await httpClient.GetFromJsonAsync<BrancheItem[]>("/branches"); 
+//        return await httpClient.GetFromJsonAsync<BrancheItem[]>("/repos/dotnet/AspNetCore.Docs/branches"); 
+
+        var r = await httpClient.GetFromJsonAsync<BrancheItem[]>("branches");
+
+        return r;
     }
 }

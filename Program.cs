@@ -22,7 +22,8 @@ builder.Services.AddHttpClient<IBrancheItemService, BrancheItemService>(client =
 
 builder.Services.AddHttpClient<IBrancheItemService, BrancheItemService>(client =>
 {
-    client.BaseAddress = new Uri("https://api.github.com/repos/dotnet/AspNetCore.Docs");
+    client.BaseAddress = new Uri("https://api.github.com/repos/dotnet/AspNetCore.Docs/");
+    client.DefaultRequestHeaders.Add("User-Agent","toto");
 });
 
 
